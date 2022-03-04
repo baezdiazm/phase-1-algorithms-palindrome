@@ -1,13 +1,24 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const phrase = ((word.split("")).reverse()).join('')
+  return(phrase == word)? true : false
 }
-
 /* 
-  Add your pseudocode here
+  App starts:
+    User inputs a string
+    asign string to a variable (phrase)
+    program splits the string by letter into an array
+    program inverts the order of the letter in the array
+    program joins letters into a variable (newPhrase)
+    compare initial string vs new string
+    return "is palindrome" if true
+    return "Not a palindrome" if false
+  App Ends
 */
 
 /*
-  Add written explanation of your solution here
+  I split, reversed, then joined the initial phrase and asigned that to a variable called "Phrase"
+  I used ternary operators to compare the original word versus the new reversed word to then return true if identical and false if not identical
 */
 
 // You can run `node index.js` to view these console logs
